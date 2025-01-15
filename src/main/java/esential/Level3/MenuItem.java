@@ -2,7 +2,7 @@ package esential.Level3;
 
 public class MenuItem {
 
-    //
+    // 필드
     private String bugerName;
     private double bugerPrice;
     private String bugerComment;
