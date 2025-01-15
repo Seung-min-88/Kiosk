@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Kiosk {
-    List<MenuItem> bugerLists;
+    private List<MenuItem> bugerLists;
 
 
     public Kiosk(){
@@ -20,7 +20,7 @@ public class Kiosk {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.println("[BUGER MENU}");
+            System.out.println("[BUGER MENU]");
             System.out.println( "0.종료");
             for (int i =0; i< bugerLists.size(); i++) {
                 MenuItem buger = bugerLists.get(i);
