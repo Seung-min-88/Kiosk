@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Kiosk {
     private List<MenuItem> bugerLists;
 
-
     public Kiosk(){
         bugerLists = new ArrayList<>();
         bugerLists.add(new MenuItem("ShackBurger", 6.9, "토마토, 양상추, 쉑소스가 토핑된 치즈버거"));

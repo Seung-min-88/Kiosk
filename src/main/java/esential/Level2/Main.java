@@ -41,8 +41,6 @@ public class Main {
             } else {
                 System.out.println("잘못된 입력입니다. 정확한 숫자를 입력해주세요.");
             }
-
-
         }
     }
 }
