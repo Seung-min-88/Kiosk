@@ -7,6 +7,8 @@ public class Menu {
     private String category;
     private List<MenuItem> menuItems;
 
+    // 생성자
+    //
     public Menu(String category, List<MenuItem> menuItems) {
         this.category = category;
         this.menuItems = menuItems;

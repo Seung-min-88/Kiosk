@@ -5,7 +5,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        // 메뉴아이템에 버거리스트란 새로운 리스트를 생성
         List<MenuItem> bugerList = new ArrayList<>();
+        // 버거리스트에 각 값을 생성자에 맞게 입력
         bugerList.add(new MenuItem("ShackBurger", 6.9, "토마토, 양상추, 쉑소스가 토핑된 치즈버거"));
         bugerList.add(new MenuItem("SmokeShack ", 8.9, "베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거"));
         bugerList.add(new MenuItem("Cheeseburger", 6.9, "포테이토 번과 비프패티, 치즈가 토핑된 치즈버거"));
@@ -23,11 +25,14 @@ public class Main {
         drinkList.add(new MenuItem("Sprite", 2.0, "세계적인 사이다 스프라이트"));
         drinkList.add(new MenuItem("Narangd cider", 2.0, "제로 사이다 나랑드"));
 
+        // 새로운 메뉴 객체를 생성
         Menu bugerMenu = new Menu("Buger", bugerList);
         Menu dessertMenu = new Menu("Dessert", dessertList);
         Menu drinkMenu = new Menu("Drink", drinkList);
 
+        // 메뉴의 메뉴리스트란 새로운 리스트를 생성
         List<Menu> menuList = new ArrayList<>();
+        // 메뉴 리스트에 위에서 생성한 객체를 넣는다
         menuList.add(bugerMenu);
         menuList.add(dessertMenu);
         menuList.add(drinkMenu);

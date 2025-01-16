@@ -1,17 +1,22 @@
 package esential.Level4;
 
-
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
 public class Kiosk {
+    // 필드
+    // 메뉴의 메뉴리스트를 속성으로 가짐
     private List<Menu> menuList;
 
+    // 생성자
+    // 키오스크 생성시 메뉴리스트를 가지고 있어야함
     public Kiosk(List<Menu> menuList) {
         this.menuList = menuList;
     }
 
+    // 메소드
+    // 입력과 메뉴의 정보를 받아 실행
     private void printCategory(Scanner sc, Menu menu) {
         boolean pc = true;
         while (pc) {
@@ -20,6 +25,7 @@ public class Kiosk {
 
                 List<MenuItem> menuItems = menu.getMenuItems();// 메뉴 아이템 리스트
                 for (int i = 0; i < menuItems.size(); i++) {
+                    // 메뉴 아이템의 i번째 것을 item에 저장
                     MenuItem item = menuItems.get(i);
                     System.out.println((i + 1) + ". " + item.getMenuName() + " | " + "W" +item.getMenuPrice() + " | " + item.getMenuComment());
                 }
@@ -31,6 +37,7 @@ public class Kiosk {
                     System.out.println("메인으로 돌아갑니다!");
                     break;
                 } else if (menuNum > 0 && menuNum <= menuItems.size()) {
+                    // 메뉴 아이템의 (입력값 -1)의 값을 item에 저장
                     MenuItem item = menuItems.get(menuNum - 1);
                     System.out.println("선택한 메뉴 : " + item.getMenuName() + " |  W" + item.getMenuPrice());
                     pc = false;
@@ -39,7 +46,7 @@ public class Kiosk {
                 }
 
             } catch (InputMismatchException e) {
-                System.out.println("숫자를 입력해주세요1");
+                System.out.println("정확한 숫자를 입력해주세요!");
                 sc.next();
             }
         }
@@ -69,10 +76,10 @@ public class Kiosk {
                     printCategory(sc, menuList.get(2));
                     break;
                 case 0:
-                    System.out.println("프로그램 종료");
+                    System.out.println("--프로그램 종료--");
                     run = false;
                 default:
-                    System.out.println("정확한 값을 입력하세요");
+                    System.out.println("정확한 값을 입력해주세요!");
             }
         }
     }
