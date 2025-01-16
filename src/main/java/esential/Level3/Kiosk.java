@@ -31,13 +31,13 @@ public class Kiosk {
                     System.out.println("프로그램을 종료합니다.");
                     break;
                 case (1) :
-                    System.out.println("1." + bugerLists.get(0).getBugerName() + " | " + bugerLists.get(0).getBugerPrice() + " | " + bugerLists.get(0).getBugerComment());
+                    System.out.println("선택한 버거는 : " + bugerLists.get(0).getBugerName() + " | W" + bugerLists.get(0).getBugerPrice());
                     break;
                 case (2) :
-                    System.out.println("2." + bugerLists.get(1).getBugerName() + " | " + bugerLists.get(1).getBugerPrice() + " | " + bugerLists.get(1).getBugerComment());
+                    System.out.println("선택한 버거는 :" + bugerLists.get(1).getBugerName() + " | W" + bugerLists.get(1).getBugerPrice());
                     break;
                 case (3) :
-                    System.out.println("3." + bugerLists.get(2).getBugerName() + " | " + bugerLists.get(2).getBugerPrice() + " | " + bugerLists.get(2).getBugerComment());
+                    System.out.println("선택한 버거는 :" + bugerLists.get(2).getBugerName() + " | W" + bugerLists.get(2).getBugerPrice());
                     break;
                 case (4) :
                     System.out.println("4." + bugerLists.get(3).getBugerName() + " | " + bugerLists.get(3).getBugerPrice() + " | " + bugerLists.get(3).getBugerComment());
