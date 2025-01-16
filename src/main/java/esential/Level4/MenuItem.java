@@ -1,14 +1,10 @@
 package esential.Level4;
 
 public class MenuItem {
-
-    //
+    //필드
     private String menuName;
-
     private double menuPrice;
-
     private String menuComment;
-
 
     // 생성자
     public MenuItem(String menuName, double menuPrice, String menuComment){
@@ -16,7 +12,6 @@ public class MenuItem {
         this.menuPrice = menuPrice;
         this.menuComment = menuComment;
     }
-
 
     // getter
     public String getMenuName() {
