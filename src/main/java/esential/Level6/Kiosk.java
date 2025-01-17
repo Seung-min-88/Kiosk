@@ -11,6 +11,11 @@ public class Kiosk {
     private List<Menu> menuList;
     private List<MenuItem> cartList = new ArrayList<>();
 
+
+    public List<MenuItem> getCartList() {
+        return cartList;
+    }
+
     // 생성자
     // 키오스크 생성시 메뉴리스트를 가지고 있어야함
     public Kiosk(List<Menu> menuList) {
@@ -75,11 +80,14 @@ public class Kiosk {
         while (ct) {
             try {
                 System.out.println("[ Order ]");
+                double totalPrice = 0;
                 for (int i = 0; i<cartList.size(); i++) {
                     System.out.println(cartList.get(i).getMenuName() + " | W " + cartList.get(i).getMenuPrice() + " | " + cartList.get(i).getMenuComment());
-                    System.out.println("[ Total ]");
-                    System.out.println("W " + cartList.get(i).getMenuPrice());
+                    totalPrice += cartList.get(i).getMenuPrice();
                 }
+                System.out.println("[ Total ]");
+                System.out.println("W " + totalPrice);
+                System.out.println();
                 System.out.println("1. 주문하기");
                 System.out.println("2. 장바구니 비우기");
                 System.out.println("3. 돌아가기");
