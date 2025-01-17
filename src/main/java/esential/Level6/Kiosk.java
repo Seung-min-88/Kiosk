@@ -24,6 +24,7 @@ public class Kiosk {
 
     // 메소드
     // 입력과 메뉴의 정보를 받아 실행
+    // 각 카타고리에서 장바구니에 넣는 메소드
     private void printCategory(Scanner sc, Menu menu) {
         boolean pc = true;
 
@@ -74,6 +75,7 @@ public class Kiosk {
         }
     }
 
+    // 장바구니를 출력하고 주문하는 메소드
     public void printCart(Scanner sc) {
         boolean ct = true;
 
