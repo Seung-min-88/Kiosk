@@ -87,6 +87,7 @@ public class Kiosk {
                 }
                 System.out.println("[ Total ]");
                 System.out.println("W " + totalPrice);
+                System.out.println();
                 System.out.println("1. 주문하기");
                 System.out.println("2. 장바구니 비우기");
                 System.out.println("3. 돌아가기");
