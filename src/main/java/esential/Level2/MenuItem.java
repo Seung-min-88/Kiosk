@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MenuItem {
-    private static final List<String> menu = new ArrayList<>();
+    private List<MenuItem> menu = new ArrayList<>();
 
     // Main에서 입력받은 메뉴들을 어레이에 저장
     // getter를 만들어 main에 출력되게 설정
@@ -13,18 +13,11 @@ public class MenuItem {
     double menuPrice; // 메뉴 가격
 
 
-    public static ArrayList<String> getMenu() {
-        return new ArrayList<>(menu);
-    }
 
     public MenuItem(String menuName, double menuPrice, String menuComent) {
         this.menuName = menuName;
         this.menuPrice = menuPrice;
         this.menuComent = menuComent;
-
-        // Main에서 입력한 메뉴들을 array에 저장
-        menu.add(menuName + " | " + menuPrice + " | " + menuComent);
-
     }
 
     public String getMenuName() {
@@ -39,4 +32,15 @@ public class MenuItem {
         return menuComent;
     }
 
+    public void setMenuName(String menuName) {
+        this.menuName = menuName;
+    }
+
+    public void setMenuPrice(double menuPrice) {
+        this.menuPrice = menuPrice;
+    }
+
+    public void setMenuComent(String menuComent) {
+        this.menuComent = menuComent;
+    }
 }

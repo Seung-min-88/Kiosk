@@ -28,5 +28,15 @@ public class MenuItem {
         return bugerComment;
     }
 
+    public void setBugerName(String bugerName) {
+        this.bugerName = bugerName;
+    }
 
+    public void setBugerPrice(double bugerPrice) {
+        this.bugerPrice = bugerPrice;
+    }
+
+    public void setBugerComment(String bugerComment) {
+        this.bugerComment = bugerComment;
+    }
 }

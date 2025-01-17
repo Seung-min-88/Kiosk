@@ -19,6 +19,7 @@ public class Kiosk {
     // 입력과 메뉴의 정보를 받아 실행
     private void printCategory(Scanner sc, Menu menu) {
         boolean pc = true;
+
         while (pc) {
             try {
                 System.out.println("[ " + menu.getCategory() + " Menu " + "]");
@@ -78,6 +79,7 @@ public class Kiosk {
                 case 0:
                     System.out.println("--프로그램 종료--");
                     run = false;
+                    break;
                 default:
                     System.out.println("정확한 값을 입력해주세요!");
             }

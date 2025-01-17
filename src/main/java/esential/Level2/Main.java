@@ -1,5 +1,6 @@
 package esential.Level2;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -41,8 +42,6 @@ public class Main {
             } else {
                 System.out.println("잘못된 입력입니다. 정확한 숫자를 입력해주세요.");
             }
-
-
         }
     }
 }
