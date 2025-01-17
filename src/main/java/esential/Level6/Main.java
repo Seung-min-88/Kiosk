@@ -1,4 +1,4 @@
-package esential.Level4;
+package esential.Level6;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +27,6 @@ public class Main {
 
         // 새로운 메뉴 객체를 생성
         Menu bugerMenu = new Menu("Buger", bugerList);
-        bugerMenu.getMenuItems().add(new MenuItem("Pepsi", 2.0, "정통 콜라 펩시"));
         Menu dessertMenu = new Menu("Dessert", dessertList);
         Menu drinkMenu = new Menu("Drink", drinkList);
 

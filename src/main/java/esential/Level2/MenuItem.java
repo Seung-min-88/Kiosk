@@ -32,4 +32,15 @@ public class MenuItem {
         return menuComent;
     }
 
+    public void setMenuName(String menuName) {
+        this.menuName = menuName;
+    }
+
+    public void setMenuPrice(double menuPrice) {
+        this.menuPrice = menuPrice;
+    }
+
+    public void setMenuComent(String menuComent) {
+        this.menuComent = menuComent;
+    }
 }
