@@ -42,8 +42,8 @@ public class Kiosk {
                     MenuItem item = menuItems.get(menuNum - 1);
                     System.out.println("선택한 메뉴 : " + item.getMenuName() + " |  W" + item.getMenuPrice());
                     pc = false;
-                } else if (menuNum > menu.getMenuItems().size()) {
-                    throw new IndexOutOfBoundsException("잘못된 입력입니다!");
+                } else {
+                    System.out.println("잘못된 입력입니다!");
                 }
 
             } catch (InputMismatchException e) {
