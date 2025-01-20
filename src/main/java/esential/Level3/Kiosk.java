@@ -40,7 +40,7 @@ public class Kiosk {
                     System.out.println("선택한 버거는 :" + bugerLists.get(2).getBugerName() + " | W" + bugerLists.get(2).getBugerPrice());
                     break;
                 case (4) :
-                    System.out.println("4." + bugerLists.get(3).getBugerName() + " | " + bugerLists.get(3).getBugerPrice() + " | " + bugerLists.get(3).getBugerComment());
+                    System.out.println("선택한 버거는 :" + bugerLists.get(3).getBugerName() + " | W" + bugerLists.get(3).getBugerPrice());
                     break;
             }
             break;

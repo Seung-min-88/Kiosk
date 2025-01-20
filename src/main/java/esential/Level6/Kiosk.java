@@ -64,8 +64,8 @@ public class Kiosk {
                         System.out.println("취소 되었습니다!");
                     }
                     pc = false;
-                } else if (menuNum > menu.getMenuItems().size()) {
-                    throw new IndexOutOfBoundsException("잘못된 입력입니다!");
+                } else {
+                    System.out.println("잘못된 입력입니다!");
                 }
 
             } catch (InputMismatchException e) {
@@ -88,16 +88,13 @@ public class Kiosk {
                     totalPrice += cartList.get(i).getMenuPrice();
                 }
                 System.out.println("[ Total ]");
-                System.out.println("W " + totalPrice);
-                System.out.println();
+                System.out.println("W " + totalPrice + "\n");
                 System.out.println("1. 주문하기");
                 System.out.println("2. 장바구니 비우기");
                 System.out.println("3. 돌아가기");
 
                 System.out.print("선택 : ");
                 int orderNum = sc.nextInt();
-//                String intput = sc.next();
-//                char cartCh = intput.charAt(0);
 
                 switch (orderNum) {
                     case 1 :
