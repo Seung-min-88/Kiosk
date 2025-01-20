@@ -8,9 +8,9 @@ public class MenuItem {
 
     // Main에서 입력받은 메뉴들을 어레이에 저장
     // getter를 만들어 main에 출력되게 설정
-    String menuName; // 메뉴이름
-    String menuComent; // 메뉴설명
-    double menuPrice; // 메뉴 가격
+    private String menuName; // 메뉴이름
+    private String menuComent; // 메뉴설명
+    private double menuPrice; // 메뉴 가격
 
 
 
